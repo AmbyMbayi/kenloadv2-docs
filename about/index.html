@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="canonical" href="https://kenloadv2.netlify.app/about/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>About - KenloadV2</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "About";
+    var mkdocs_page_input_path = "about.md";
+    var mkdocs_page_url = "/about/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> KenloadV2</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">About</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#product-perspective">Product Perspective</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#hsmwim-weighing-procedure">HSMWIM Weighing Procedure</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#weighing-procedurestaticlsmwimsaw">Weighing Procedure(static/LSMWIM/SAW)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#presecution-procedure">Presecution Procedure</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#vehicle-inspector-procedure">Vehicle Inspector Procedure</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#clerk-census-procedure">Clerk Census Procedure</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#duty-manager-procedure">Duty Manager Procedure</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#product-function">Product Function</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#weighing-module">Weighing Module</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#prosecution-module">Prosecution Module</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#vehicle-inspector-module">Vehicle Inspector Module</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#census-clerk-module">Census Clerk Module</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#special-release-module">Special Release Module</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#directing-office-module">Directing Office Module</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#administration-module">Administration Module</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#vehicle-tag-module">Vehicle Tag Module</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#traffic-control-module">Traffic Control Module</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#monitoring-health-check-module">Monitoring/ Health Check Module</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mobile-weighing-module">Mobile Weighing Module</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#weighbridge-management-module">Weighbridge Management Module</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#operating-environment">Operating Environment</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#design-and-implementation-constraints">Design and Implementation Constraints</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#user-documentation">User Documentation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#assumption-and-dependencies">Assumption and Dependencies</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#nonfunctional-requirements">Nonfunctional Requirements</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#performance-and-availability-requirements">Performance and Availability Requirements</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#compatibility-and-maintainability-requirements">Compatibility and Maintainability Requirements</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#security-requirements">Security Requirements</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#usability-requirements">Usability Requirements</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#support-requirements">Support Requirements</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#test-requirements">Test Requirements</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#project-layout">Project layout</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../glossary/">Glossary</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">KenloadV2</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>About</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="overall-descriptions">overall Descriptions</h1>
+<p>For full Operation of the site visit <a href="https://kenloadv2.netlify.app/">kenloadv2 Website</a>.</p>
+<h2 id="product-perspective">Product Perspective</h2>
+<h4 id="hsmwim-weighing-procedure">HSMWIM Weighing Procedure</h4>
+<p>When a vehicle approaches the,</p>
+<ul>
+<li>HSWIM system picks the number plate </li>
+<li>Picks date and time</li>
+<li>Gets the road location and lane</li>
+<li>Gets the vehicle speed</li>
+<li>Gets the vehicle length and distance between the axles</li>
+<li>Gets the number of axles</li>
+<li>Get the number of tire(s) the vehicle has</li>
+<li>Gets the vehicle weight per axle and also Gross Vehicle Weight (GVW).</li>
+<li>Gets the vehicle classification and computes against the permissible weight.</li>
+<li>Sends the results on the Variable Messaging Service (VMS) where the driver can see and know where the vehicle has been directed to.</li>
+</ul>
+<p>The system will be integrated and stores the information for cross reference if the vehicle was called in and weighed on the static weighbridge.</p>
+<h4 id="weighing-procedurestaticlsmwimsaw">Weighing Procedure(static/LSMWIM/SAW)</h4>
+<ul>
+<li>The vehicles approach the weighbridge. The Computer Operator Weighing (COW) checks and confirms the weighbridge is operational and working fine. Confirms the indicator that gets weight on the display shows zero (0) KG. Also confirms that the weighbridge is kept clean and no debris is blocking the weighbridge. </li>
+<li>The COW will use the KENLOAD system to weigh the vehicle. The user sign in into Kenload and opens the weighing screen.</li>
+</ul>
+<p><img alt="image info" src="../pictures/login.png" /></p>
+<ul>
+<li>The Computer Operator on the Kenload system on the weighing module will click on Weigh button the boom open and the traffic lights will turn green. </li>
+<li>
+<p>The vehicle enters the Multi Decks weighbridge or the axle the image will be taken and ANPR assist will get the vehicle number plate. Then the boom closes once the vehicle has passed the boom.</p>
+</li>
+<li>
+<p>When the vehicle enter the weighbridge Kenload System picks the number plate using automatic number plate recognition and waits the operator to position the vehicles. Then the COW clicks next to show the weight value on the screen. Also shows on the remote displays outside.</p>
+</li>
+<li>
+<p>If a vehicle has a permit the COW request for the permit number and enter which checks with the KeNHA servers and verifies the permit</p>
+</li>
+<li>
+<p>The computer operator enters the other details trailer number, driver name, vehicle make, cargo, axle type, Transporter, origin, destination and any comments.</p>
+</li>
+<li>
+<p>The COW takes the weight and advices the vehicle to proceed If the vehicle on the road or if the vehicle is overload or To redistribute or tagged the COW instructs the driver for a delivery note or driver license or a legal document that they can hold to until the vehicle weight is corrected.</p>
+</li>
+<li>
+<p>The vehicle proceeds to the yard. If it is to redistribute then the prosecutor raise Impounded and Prohibited order and also raise Conditional Load Correction to allow the vehicle to start. Below are sample document</p>
+</li>
+</ul>
+<h4 id="presecution-procedure">Presecution Procedure</h4>
+<p>The Computer Operator prosecutor (COP) will view list of all the overloaded vehicles. They will be able to select a vehicle to prosecute or prosecute any other vehicles that are not weighed in the system.
+The prosecutor enters details of the owner, driver, transporter, location details, court details, Prohibition details.
+The prosecutor then generates the relevant document for the specific overload. The various documents are prohibition order, Conditional Load Correction Memo, Charge Sheet and Load Correction Memo.</p>
+<h4 id="vehicle-inspector-procedure">Vehicle Inspector Procedure</h4>
+<p>The vehicle inspector inspects the wide load vehicle at the station and takes various details of the vehicle. The inspector ensures that the vehicle is also in good condition. </p>
+<p>The system will allow the inspector to enter the vehicle details to reject and charge the vehicle owner and/or driver if the vehicle is not in accordance with the permit issued.</p>
+<p>All the records will be stored in the system </p>
+<h4 id="clerk-census-procedure">Clerk Census Procedure</h4>
+<p>The clerk census module will assist the clerk census who is counting the vehicle using the road by assisting in the input of the data they have collected and saving it into the system.
+After they have collected the data the input the details in the system specifying the hour, direction or route, vehicle size and type</p>
+<h4 id="duty-manager-procedure">Duty Manager Procedure</h4>
+<p>The duty manager will be able to use most modules in the system to enable them manage the weighbridge. The specific modules used will be the yard monitoring, special release, overloaded vehicle, called in vehicles and get various notification.
+The duty manage will be able to generate reports from the system</p>
+<h2 id="product-function">Product Function</h2>
+<h3 id="weighing-module">Weighing Module</h3>
+<p>The vehicles being weighed in the system should have the following function;</p>
+<ul>
+<li>Can weigh on LSWIM / MultiDeck / SAW</li>
+<li>Can enter /edit vehicle registration</li>
+<li>Permit scanning</li>
+<li>Enter container or trailer number</li>
+<li>Enter Driver or Vehicle make</li>
+<li>Enter Cargo name</li>
+<li>Can select axle configuration</li>
+<li>Can select origin</li>
+<li>Can select or enter Destination</li>
+<li>Can direct the vehicle to the yard or exit</li>
+<li>Can Issue a special release</li>
+<li>Can print a ticket</li>
+<li>Connection to the remote display</li>
+<li>Control Traffic lights and Boom</li>
+<li>Can connect to the indicator</li>
+<li>Input indicator parameters</li>
+<li>Connecting to the indicator</li>
+<li>Can take the vehicle registration number</li>
+<li>Can take and save the vehicle image</li>
+<li>Can record any vehicle that steps on the weighbridge and store the details if not weighed.</li>
+<li>Can calculate Pavement Damage Factor[PDF]</li>
+</ul>
+<h3 id="prosecution-module">Prosecution Module</h3>
+<p>The vehicles being prosecuted in the system should have the following function;</p>
+<ul>
+<li>Can prosecute a vehicle</li>
+<li>Can enter driver, owner , location, court and transporters details</li>
+<li>Can create a prohibition order</li>
+<li>Can create a Conditional Load Correction Memo</li>
+<li>Can create a Charge Sheet</li>
+<li>Can create Load Correction Memo</li>
+<li>Can generate payment details</li>
+<li>Can generate a special release</li>
+<li>Can preview document</li>
+<li>Can produce an EAC act document which can be charged either on GVW/Axle or both</li>
+<li>Payment can be made through Mpesa or Banking and verification made by the system</li>
+</ul>
+<h3 id="vehicle-inspector-module">Vehicle Inspector Module</h3>
+<p>The wide load vehicles checking point in the system should have the following function;</p>
+<ul>
+<li>Can Enter Vehicle Registration</li>
+<li>Can enter permit number</li>
+<li>Can scan permit</li>
+<li>Can enter trailer registration</li>
+<li>Can enter transporter Details</li>
+<li>Can enter vehicle Model</li>
+<li>Can enter origin and destination</li>
+<li>Can select vehicle axle configuration</li>
+<li>Can select if vehicle has First Aid Kit</li>
+<li>Can select if vehicle has Fire Extinguisher</li>
+<li>Can select if Driver is drunk</li>
+<li>Can enter if driver has a valid license</li>
+<li>Can enter if the vehicle has a valid insurance</li>
+<li>Can enter if the vehicle has a valid inspection sticker</li>
+<li>Can enter if the vehicle is in good condition</li>
+<li>Can take measurement of the vehicle</li>
+<li>Can enter the vehicle tire conformity</li>
+<li>Can enter weight of the load</li>
+<li>Can enter amount charged</li>
+<li>Can enter travel date</li>
+<li>Can enter authorized date</li>
+<li>Can validate the permit </li>
+<li>Can remove a wrong entry</li>
+<li>Can Accept or Reject the permit for various reason and charge vehicle in the system</li>
+</ul>
+<h3 id="census-clerk-module">Census Clerk Module</h3>
+<p>The census clerk counting vehicle on the road, in the system should have the following function;</p>
+<ul>
+<li>Can enter the date</li>
+<li>Can select the shift</li>
+<li>Can select the route</li>
+<li>Can select the hour</li>
+<li>Can enter Trucks greater than 7 tonnes</li>
+<li>Can enter trucks greater than 3.5 Tonnes and less than 7 tonnes</li>
+<li>Can enter the number of buses</li>
+<li>Can show the user who added the record</li>
+<li>Can remove a wrong entry</li>
+<li>Can print the record</li>
+</ul>
+<h3 id="special-release-module">Special Release Module</h3>
+<p>The Duty Manager managing the station, in the system should have the following function in the special release module;</p>
+<ul>
+<li>User can see details of vehicle being release</li>
+<li>Can see prosecution details</li>
+<li>Can select reason for releasing</li>
+<li>Can enter the more details for releasing vehicle</li>
+<li>Can issue a special release document</li>
+<li>Can display the charges paid</li>
+<li>Can display the prosecutor name</li>
+<li>When directed for weighing, shows the release</li>
+<li>Can display the internal memo</li>
+<li>Can print the record</li>
+</ul>
+<h3 id="directing-office-module">Directing Office Module</h3>
+<p>The directing office on the High Speed Weighing In Motion (HSWIM), in the system should have the following function;</p>
+<ul>
+<li>Can show images of the vehicle</li>
+<li>Can get the vehicle number plate automatically with ANPR</li>
+<li>Can tag a vehicle</li>
+<li>Can show if a vehicle is called in</li>
+<li>Can show if a vehicle is overloaded</li>
+<li>Can show previous vehicles</li>
+<li>Can show multiple images</li>
+<li>Can show the weight of the vehicle GVW</li>
+<li>Can show weight per axle</li>
+<li>Can call in vehicles</li>
+<li>Can show the date and time</li>
+<li>Can print the record</li>
+<li>Can sound the alarm</li>
+</ul>
+<h3 id="administration-module">Administration Module</h3>
+<p>The system should have the following administration function;</p>
+<ul>
+<li>Users can Sign in into the system</li>
+<li>Users access can be created</li>
+<li>Users can be given permission to access</li>
+<li>User can change password</li>
+<li>Audit trails of the user can be retrieved</li>
+<li>Users and roles can be created</li>
+<li>Users can be deactivated</li>
+<li>Users can be assigned shift</li>
+<li>User can exit the system</li>
+<li>Users list can be printed</li>
+<li>System can do backup</li>
+<li>Weighbridges can be added</li>
+<li>Password policy can be implemented</li>
+</ul>
+<h3 id="vehicle-tag-module">Vehicle Tag Module</h3>
+<p>The system should tag a vehicle following administration function;</p>
+<ul>
+<li>Vehicle can be tagged automatically or manually</li>
+<li>Images can be added for the tag.</li>
+<li>The tag ticket can be closed</li>
+<li>The tag record can be tracked</li>
+<li>You can print a tag</li>
+<li>Can see the action taken for the tag</li>
+</ul>
+<h3 id="traffic-control-module">Traffic Control Module</h3>
+<p>The system should have traffic control function;</p>
+<ul>
+<li>Can turn traffic lights red or green</li>
+<li>Can show the vehicle to exit or proceed to the yard</li>
+<li>Can open and close the boom</li>
+</ul>
+<h3 id="monitoring-health-check-module">Monitoring/ Health Check Module</h3>
+<p>The system should have a monitoring function to ensure all hardware they are working;</p>
+<ul>
+<li>Can monitor the cameras if on or off</li>
+<li>Can monitor the vehicle on the site</li>
+<li>Can monitor the pc are on</li>
+<li>Can monitor indicator is on</li>
+</ul>
+<h3 id="mobile-weighing-module">Mobile Weighing Module</h3>
+<p>The system should have a mobile weighing module with the following function;</p>
+<ul>
+<li>Can run on a mobile device</li>
+<li>Can input weight of the vehicle</li>
+<li>Can input vehicle details</li>
+<li>Can input the location or route</li>
+<li>Can print a ticket</li>
+<li>Can synchronize data online to the server</li>
+</ul>
+<h3 id="weighbridge-management-module">Weighbridge Management Module</h3>
+<p>The system should have the ability to integrate all Weighbridge Station into one system where in the main system the user can see all records from the sites.</p>
+<h2 id="operating-environment">Operating Environment</h2>
+<p>The Kenload Weighbridge Management System is a web based application and shall operate in all famous browsers therefore it can run on any operation system. It will be accompanied by mobile application which will run on both Android and IOS</p>
+<h2 id="design-and-implementation-constraints">Design and Implementation Constraints</h2>
+<p>The information of all users, roles, vehicles weighed, vehicle prosecuted, vehicle inspector and clerk censors must be stored is a database that is accessible.
+MS SQL server will be used as SQL engine and database.</p>
+<p>The Kenload Weighbridge Management system will be running 24 hours a day</p>
+<p>Users must have their correct usernames and passwords to enter into their system.</p>
+<p>The main Kenload WMS system will be available over the internet and will require internet connection to access. </p>
+<h2 id="user-documentation">User Documentation</h2>
+<p>The Kenload Weighbridge Management System will have a user manual that would be written to help understand the working methodology and usage of the developed prototype system. It would be written for non-technical individuals and the level of content or terminology would differ considerably from the Technical Administration Guide, which is more detailed and complex. </p>
+<p>The user manual would follow common user documentation styles capturing purpose and scope of the product along with key system features and operations; step-by-step instructions for using the system including conventions, messaging structures, quick references, tips for errors and malfunctions; pointers to reference documents; and glossary of terms.</p>
+<h2 id="assumption-and-dependencies">Assumption and Dependencies</h2>
+<p>This product would build on leveraging existing systems. In this regard, necessary inspirations could be obtained by analyzing related systems such as Kenwei and Kenload Version 1. In particular, the design and implementation approach of Kenwei and Kenload Version1 could be helpful to draw a clear guideline for developing the intended prototype.</p>
+<p>This system will need third party products like Microsoft SQL Server to store the database. Will require javascript, Vuejs, Nodejs, React Native to develop the product.</p>
+<p>The system will require all the hardware like Boom, traffic lights, cameras, loops and PLC to work in order to control and get the proper results.</p>
+<h2 id="nonfunctional-requirements">Nonfunctional Requirements</h2>
+<p>Non-functional requirements capture the system attributes which are outside the functionalities and cover the software quality attributes like performance, availability, compatibility, maintainability, security, and usability aspects as detailed below.</p>
+<h3 id="performance-and-availability-requirements">Performance and Availability Requirements</h3>
+<p>User feedback highlighted the slow response of the current system. Therefore performance improvement will be a key aspect in this new version.</p>
+<p>Performance will be measured in terms of both availability, speed and reliability.
+Availability: The system should be highly available to guarantee 24/7 uninterrupted usage.
+Speed: The system's response time (TAT) must be within acceptable levels.
+Reliability: All system modules should be seamlessly responsive to enable smooth transactions without a break in the process for all modules.</p>
+<h3 id="compatibility-and-maintainability-requirements">Compatibility and Maintainability Requirements</h3>
+<p>The system should be compatible with and be able to run on a Windows environment with the backend database running on Microsoft MSSQL engine.
+The system’s mobile app version should be compatible with and be able to run on both android and iOS.
+Maintainability: To cater for future upgrades of the underlying OS environment, the system should be compatible with Windows Security Updates.</p>
+<h3 id="security-requirements">Security Requirements</h3>
+<p>To guarantee security of the system generated data, an audit trail of user activities will be implemented and maintained to enable tracking and remediation.
+The system should be able to support Active Directory Single Sign-On and Multi-User password control.</p>
+<h3 id="usability-requirements">Usability Requirements</h3>
+<p>The system should have an intuitive GUI to guarantee a short learning curve and good UX for its users.Documentation and module descriptions will be included to support user training and on-boarding.</p>
+<h3 id="support-requirements">Support Requirements</h3>
+<p>The system should enable logging to make it easy for System Administrators to support and troubleshoot incidences.</p>
+<h3 id="test-requirements">Test Requirements</h3>
+<p>The system should support testing both at the:</p>
+<ul>
+<li><code>Unit/module level</code></li>
+<li><code>System level</code></li>
+</ul>
+<h2 id="project-layout">Project layout</h2>
+<pre><code>mkdocs.yml    # The configuration file.
+docs/
+    index.md  # The documentation homepage.
+    ...       # Other markdown pages, images and other files.
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../glossary/" class="btn btn-neutral float-right" title="Glossary">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../glossary/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
