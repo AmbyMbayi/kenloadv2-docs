@@ -1,0 +1,9 @@
+site_name: KenloadV2
+site_url: https://kenloadv2.netlify.app/
+
+nav:
+   - Introduction: index.md
+   - About: about.md
+   - Glossary: glossary.md
+   
+theme: readthedocs
